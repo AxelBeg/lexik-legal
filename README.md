@@ -3,7 +3,7 @@
 Pages légales de l'application Android Lexik (`com.beginz.lexik`), servies par GitHub Pages :
 
 - `confidentialite/` — politique de confidentialité
-- `compte/` — suppression de compte (exigée par le Play Store)
-- `privacy/`, `delete-account/` — redirections
+- `privacy/` — redirection
 
-Source : dossier `web/` du dépôt `lexik`. Modifier les deux ensemble.
+Lexik n'a ni compte ni serveur : il n'y a pas de page de suppression de compte.
+Ce dépôt est la seule source de ces pages.
