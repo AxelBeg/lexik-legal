@@ -1,13 +1,290 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=../confidentialite/">
-  <link rel="canonical" href="https://axelbeg.github.io/lexik-legal/confidentialite/">
-  <title>Politique de confidentialité — Lexik</title>
-  <script>location.replace('../confidentialite/');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Lexik</title>
+  <meta name="description" content="Lexik has no accounts and keeps your progress on your device. Only anonymous usage statistics (PostHog, hosted in the EU), the words you choose to report and Google AdMob advertising data leave it. Purchases go through Google Play.">
+  <link rel="canonical" href="https://axelbeg.github.io/lexik-legal/privacy/">
+  <link rel="alternate" hreflang="fr" href="https://axelbeg.github.io/lexik-legal/confidentialite/">
+  <link rel="alternate" hreflang="en" href="https://axelbeg.github.io/lexik-legal/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://axelbeg.github.io/lexik-legal/privacy/">
+  <script>
+    // ?lang=fr : le lien venu de l'app ouvre directement la bonne langue.
+    if ((new URLSearchParams(location.search).get('lang') || '').slice(0, 2).toLowerCase() === 'fr') location.replace('../confidentialite/' + location.hash);
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+  <style>
+    :root {
+      --bg: #f7f6f4;
+      --surface: #ffffff;
+      --border: #e4e3df;
+      --border-strong: #d8d7d3;
+      --text: #16181d;
+      --text-muted: #4a4c54;
+      --text-dim: #6f7078;
+      --text-ghost: #a3a5ad;
+      --accent: #d1651c;
+      --accent-hover: #b5540f;
+      --raised: #16181d;
+      --track: #eceae6;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); }
+    .wrap { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.5rem 4.5rem; }
+    header { display: flex; flex-direction: column; align-items: center; gap: 0.85rem; margin-bottom: 2.75rem; }
+    .brand {
+      font-size: 1.65rem; font-weight: 600; letter-spacing: 0.32em;
+      text-indent: 0.32em; line-height: 1; color: var(--text);
+    }
+    .dots { display: flex; gap: 7px; align-items: center; }
+    .dots i { width: 5px; height: 5px; border-radius: 3px; display: block; }
+    nav.crumbs { width: 100%; font-size: 0.8rem; color: var(--text-dim); text-align: center; }
+    h1 { font-size: 1.85rem; font-weight: 600; line-height: 1.15; margin: 0 0 0.4rem; }
+    .lede { color: var(--text-dim); margin: 0 0 1.5rem; }
+    .meta {
+      display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 0.72rem; color: var(--text-ghost); margin-bottom: 1.75rem;
+    }
+    .toc {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.15rem 1.25rem 1.25rem; margin: 0 0 2.5rem;
+    }
+    .toc .label {
+      font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em;
+      color: var(--text-dim); margin-bottom: 0.7rem;
+    }
+    .toc ol { margin: 0; padding: 0 0 0 1.15rem; }
+    .toc li { margin: 0.28rem 0; }
+    .toc a { color: var(--text); }
+    .toc a:hover { color: var(--accent); }
+    h2 {
+      font-size: 1.15rem; font-weight: 600; margin: 2.4rem 0 0.7rem;
+      padding-top: 0.4rem;
+    }
+    h2 .n {
+      display: block; font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.2em; color: var(--text-dim); margin-bottom: 0.35rem;
+    }
+    p { margin: 0.65rem 0; color: var(--text-muted); }
+    ul, ol { margin: 0.5rem 0 0.8rem; padding-left: 1.2rem; color: var(--text-muted); }
+    li { margin: 0.28rem 0; }
+    strong { color: var(--text); font-weight: 600; }
+    table {
+      width: 100%; border-collapse: collapse; margin: 1rem 0 1.2rem;
+      font-size: 0.9rem; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+    }
+    th, td { text-align: left; vertical-align: top; padding: 0.7rem 0.85rem; border-bottom: 1px solid var(--border); }
+    th { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); background: var(--track); }
+    tr:last-child td { border-bottom: 0; }
+    td { color: var(--text-muted); }
+    td:first-child { color: var(--text); font-weight: 500; width: 34%; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.15rem 1.25rem; margin: 1rem 0;
+    }
+    .card p:first-child { margin-top: 0; }
+    .card p:last-child { margin-bottom: 0; }
+    footer {
+      margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--border);
+      font-size: 0.85rem; color: var(--text-dim);
+    }
+    footer nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; margin-bottom: 0.7rem; }
+  </style>
 </head>
 <body>
-  <p><a href="../confidentialite/">Politique de confidentialité de Lexik</a></p>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../" style="color: inherit;">LEXIK</a>
+      <div class="dots" aria-hidden="true">
+        <i style="background:#34489a"></i>
+        <i style="background:#3560ad"></i>
+        <i style="background:#47789b"></i>
+        <i style="background:#86775c"></i>
+        <i style="background:#b57a1e"></i>
+        <i style="background:#d1651c"></i>
+        <i style="background:#cf2d18"></i>
+      </div>
+      <nav class="crumbs" aria-label="Language"><a href="../confidentialite/" hreflang="fr" lang="fr">Français</a> · English</nav>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="lede">Lexik doesn’t ask you to create an account, and your progress stays on your phone. Two things leave it: anonymous usage statistics, sent to PostHog (hosted in the European Union) so we know how the game is used, and the data Google AdMob needs for video ads. A word the game refuses only leaves your phone if you choose to report it. If you buy a hint pack, the payment goes through Google Play.</p>
+    <div class="meta">
+      <span>Last updated: November 4, 2026</span>
+      <span>Android app <span style="letter-spacing:0">com.beginz.lexik</span></span>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <div class="label">CONTENTS</div>
+      <ol>
+        <li><a href="#publisher">Publisher and controller</a></li>
+        <li><a href="#data">Data processed</a></li>
+        <li><a href="#purposes">Purposes and legal bases</a></li>
+        <li><a href="#statistics">Usage statistics and reported words</a></li>
+        <li><a href="#advertising">Advertising and advertising ID</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#retention">Retention</a></li>
+        <li><a href="#rights">Your rights</a></li>
+        <li><a href="#erase">Erasing your data</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="publisher"><span class="n">01</span>Publisher and data controller</h2>
+    <p>Lexik is a semantic puzzle game (word of the day and campaign) published by <strong>Gbz Games</strong>, the data controller for the Lexik Android app (ID <strong>com.beginz.lexik</strong>).</p>
+    <p>Contact: <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a>.</p>
+    <p><strong>No account, no game server.</strong> Lexik runs entirely on your phone. You have no account to create, and no email address, name or password to provide. Your progress is saved on the device, and Gbz Games receives no copy of it. What we receive is limited to the anonymous usage statistics and the words you report, described in section&nbsp;4.</p>
+
+    <h2 id="data"><span class="n">02</span>Data processed</h2>
+    <p>Here is the complete list. The first two rows never leave your device. The third and fourth are sent to PostHog for Gbz Games. The next two are sent to Google by the Google AdMob SDK, never to Gbz Games. The last one is processed by Google Play.</p>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>What it is, and where it goes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Game data</td>
+          <td>Completed levels, word guesses, scores, hints used, hint currency, streak of days played, word of the day results, number of rewarded videos watched that day. <strong>Stored only on the device, never transmitted.</strong> A word refused by the game isn’t saved: it’s only sent if you report it (see “Reported words”).</td>
+        </tr>
+        <tr>
+          <td>Local preferences</td>
+          <td>Sound on or off, whether the notification permission has already been requested, and a display cache. <strong>Stored only on the device, never transmitted.</strong></td>
+        </tr>
+        <tr>
+          <td>Usage statistics</td>
+          <td>Anonymous game events (for example a game started or won, a hint purchased, a rewarded video watched, a purchase started, completed or failed, with the pack, its price and the currency), along with a random installation ID, a session ID, the language, the device model, the Android version and the app version. <strong>Sent to PostHog, for Gbz Games.</strong> See section&nbsp;4.</td>
+        </tr>
+        <tr>
+          <td>Reported words</td>
+          <td>A word refused by the game, only if you tap <em>Signaler une erreur</em> (“Report an error”), with the current game and the information in the row above. <strong>Sent to PostHog, for Gbz Games.</strong> See section&nbsp;4.</td>
+        </tr>
+        <tr>
+          <td>Advertising ID</td>
+          <td>The Android advertising ID (AAID), read by the Google AdMob SDK and <strong>sent to Google</strong> to serve rewarded videos. See section&nbsp;5.</td>
+        </tr>
+        <tr>
+          <td>Device and ad usage information</td>
+          <td>Sent <strong>to Google</strong> by the AdMob SDK: IP address (from which Google infers an approximate location), device model, Android version, language, SDK diagnostic data and ad interactions (display, viewing, click).</td>
+        </tr>
+        <tr>
+          <td>In-app purchases</td>
+          <td>The hint packs you buy and the status of those purchases, <strong>processed by Google Play</strong>. Payment is handled only by Google: Gbz Games never has access to your payment information.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Lexik does not collect</strong>: name, email address, phone number, contacts, photos, files, microphone, precise location, health data or payment information. The app doesn’t record your screen (no session recording) and doesn’t include Firebase Analytics, Crashlytics or any social network pixel.</p>
+    <p><strong>Notifications.</strong> The word of the day reminder is scheduled <em>on the device</em>. No notification token is sent anywhere. The permission is only requested after a first daily win, and can be withdrawn in Android settings.</p>
+    <p><strong>Sharing.</strong> The victory message goes through the system share sheet. Lexik has no access to your contacts.</p>
+
+    <h2 id="purposes"><span class="n">03</span>Purposes and legal bases</h2>
+    <ul>
+      <li><strong>Running the game</strong> (game data, preferences): this data is processed by the app, on your device. Gbz Games has no access to it and doesn’t receive it.</li>
+      <li><strong>Usage statistics</strong> (anonymous events, installation ID, technical information): legitimate interest, Art.&nbsp;6(1)(f) GDPR. The aim is to understand how the game is used, spot what blocks players and improve Lexik.</li>
+      <li><strong>Reported words</strong> (the word, the current game, installation ID, technical information): legitimate interest, Art.&nbsp;6(1)(f) GDPR. The aim is to correct the game’s dictionary, and the word is only sent when you ask for it to be.</li>
+      <li><strong>In-app purchases</strong> (purchase status): performance of a contract, Art.&nbsp;6(1)(b) GDPR. The aim is to credit you with the hints you bought.</li>
+      <li><strong>Rewarded ads</strong> (advertising ID, device information sent to Google): consent, Art.&nbsp;6(1)(a) GDPR. In the European Economic Area, the United Kingdom and Switzerland, it is collected through Google’s consent form (UMP) before any personalized ad.</li>
+    </ul>
+
+    <h2 id="statistics"><span class="n">04</span>Usage statistics and reported words</h2>
+    <p>Lexik sends usage statistics to <strong>PostHog</strong> (PostHog Inc.), which acts as a processor for Gbz Games. The data is <strong>hosted in the European Union</strong> (PostHog Cloud EU).</p>
+    <ul>
+      <li><strong>What is sent</strong>: the game events and reported words described in section&nbsp;2, and nothing else. No screen recording, no automatic capture of your gestures.</li>
+      <li><strong>Anonymous</strong>: the installation ID is generated at random by the app. It isn’t linked to a name, an email address, your Google account or the advertising ID. Reinstalling creates a new one.</li>
+      <li><strong>IP address</strong>: needed to send the data, it is neither kept by PostHog for Lexik nor used to locate you.</li>
+      <li><strong>Use</strong>: overall measurements (how many players finish a level, where they give up, how many hints they use). These statistics aren’t used for advertising or to profile you, and are neither sold nor shared.</li>
+    </ul>
+    <p id="reporting"><strong>Reporting a refused word.</strong> When Lexik doesn’t recognize a word you enter, a <em>Signaler une erreur</em> (“Report an error”) link appears under the refusal message. Your guesses are never sent on their own: until you tap this link, nothing leaves your phone. One tap is enough, with no confirmation step: Lexik shows <em>Merci, c’est noté</em> (“Thanks, noted”) and sends PostHog the word as displayed on screen (lowercase, without digits or punctuation, 40 characters at most), along with the game mode, the word of the day or level number, its difficulty, the installation ID and the technical information from section&nbsp;2. We only use it to identify words the game wrongly refuses. Since this is text you typed, don’t report a person’s name, an address or any other personal information. Reported words follow the same rules as usage statistics: kept for 12 months at most, never sold, shared or used for advertising.</p>
+    <p>PostHog’s policy: <a href="https://posthog.com/privacy">posthog.com/privacy</a>.</p>
+
+    <h2 id="advertising"><span class="n">05</span>Advertising and advertising ID</h2>
+    <p>Lexik only shows <strong>rewarded video ads</strong>, through <strong>Google AdMob</strong> (Google Ireland Limited / Google LLC), and only when you choose to watch one. A video watched to the end credits hints. The limit is three per day, counted on the device.</p>
+    <p>To serve these ads, measure their display and fight fraud, Google processes the data described in section&nbsp;2: the advertising ID, IP address, device information, diagnostic data and your interactions with the ad.</p>
+    <p><strong>Your choice.</strong> In the EEA, the United Kingdom and Switzerland, a consent form appears before personalized ads. You can refuse: the game stays playable, and any ads shown are then non-personalized.</p>
+    <p><strong>Changing your mind.</strong> You can change or withdraw your consent at any time:</p>
+    <ul>
+      <li>in Lexik: <strong>Réglages → Préférences publicitaires</strong> (Settings → Ad preferences), which reopens the consent form (this row appears where the form applies);</li>
+      <li>in Android: reset or delete the advertising ID (Settings → Google → Ads, or Settings → Privacy → Ads, depending on the version);</li>
+      <li>in your Google account: <a href="https://myadcenter.google.com/">My Ad Center</a>, for ad personalization.</li>
+    </ul>
+    <p>Google processes this data under its own policy:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543">AdMob privacy</a></li>
+    </ul>
+
+    <h2 id="partners"><span class="n">06</span>Partners and transfers</h2>
+    <p>We don’t sell any data. Three services are involved:</p>
+    <ul>
+      <li><strong>PostHog</strong>: usage statistics, on behalf of Gbz Games, hosted in the European Union (section&nbsp;4).</li>
+      <li><strong>Google AdMob</strong>: rewarded ads (section&nbsp;5).</li>
+      <li><strong>Google Play</strong>: distribution and updates of the app, and payment for in-app purchases, under Google Play’s rules.</li>
+    </ul>
+    <p>Usage statistics stay in the European Union. Google is established in the United States among other places: when advertising data is transferred outside the European Union, this is done under the mechanisms provided by Google (standard contractual clauses and, where applicable, the adequacy framework in force).</p>
+
+    <h2 id="retention"><span class="n">07</span>Retention</h2>
+    <ul>
+      <li><strong>Game data and preferences</strong>: kept on the phone until you uninstall Lexik or clear its data (see section&nbsp;9).</li>
+      <li><strong>Android backup</strong>: if backup is enabled on your phone, Android may copy Lexik’s data into your Google account backup. This is what lets you recover your progress on a new phone. This copy is managed by Google, in your account, and Gbz Games has no access to it. You can disable or delete it from the backup settings of your phone or Google account.</li>
+      <li><strong>Usage statistics and reported words</strong>: kept by PostHog for 12 months at most, then deleted.</li>
+      <li><strong>Advertising data and purchase history</strong>: kept by Google under its policy. Gbz Games doesn’t store them.</li>
+    </ul>
+
+    <h2 id="rights"><span class="n">08</span>Your rights</h2>
+    <p>The GDPR gives you the right of access, rectification, erasure, restriction, portability and objection, as well as the right to withdraw your consent.</p>
+    <ul>
+      <li><strong>Your progress</strong>: Gbz Games doesn’t hold it. It’s in your hands: to erase it, uninstall Lexik or clear its data (section&nbsp;9).</li>
+      <li><strong>Usage statistics and reported words</strong>: you can object to their processing, or request access to them or their erasure, by writing to <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a>. As they are only linked to a random installation ID, we can only find them if you give us details that identify it. Without those, we can’t connect these events to you.</li>
+      <li><strong>Advertising</strong>: withdraw your consent in Réglages → Préférences publicitaires (Settings → Ad preferences), reset the advertising ID, and manage the data held by Google from your Google account settings.</li>
+    </ul>
+    <p>You can also lodge a complaint with the <a href="https://www.cnil.fr/">CNIL</a>, the French data protection authority.</p>
+
+    <h2 id="erase"><span class="n">09</span>Erasing your data</h2>
+    <div class="card">
+      <p><strong>There is no account to delete.</strong> All your game data is on your phone.</p>
+      <p><strong>Erase everything</strong>: uninstall Lexik. Or, to keep the app and start over: Android Settings → Apps → Lexik → Storage → <em>Clear data</em>. Erasure is immediate and irreversible, and a new installation ID will be generated on the next launch.</p>
+      <p><strong>Backup copy</strong>: if Android backup is enabled, also delete Lexik’s copy from your Google account backup settings.</p>
+    </div>
+    <p>Clearing Lexik’s data on the phone doesn’t delete usage statistics or reported words that have already been sent: they are no longer linked to the new installation, and disappear after 12 months at most. To have them erased sooner, see section&nbsp;8. The data Google holds for advertising is managed from your Google account (section&nbsp;5).</p>
+
+    <h2 id="children"><span class="n">10</span>Children</h2>
+    <p>Lexik is not intended for children under 16 and is not a “designed for families” service. We don’t knowingly collect data about minors under 16. If you believe a minor is using Lexik, write to <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a>.</p>
+
+    <h2 id="security"><span class="n">11</span>Security</h2>
+    <p>Game data stays in the app’s private storage, which other apps can’t access. Lexik’s network traffic is limited to what it sends to PostHog, the traffic of the Google AdMob SDK and exchanges with Google Play for purchases, all encrypted in transit (HTTPS).</p>
+
+    <h2 id="changes"><span class="n">12</span>Changes</h2>
+    <p>If Lexik changes how it processes data — for example online progress backup through Google Play Games, new usage statistics or a new partner — this policy will be updated before the change goes live, and the date at the top of the page will change. The French version published at <a href="https://axelbeg.github.io/lexik-legal/confidentialite/">axelbeg.github.io/lexik-legal/confidentialite/</a> is authoritative; this page is its English translation.</p>
+
+    <h2 id="contact"><span class="n">13</span>Contact</h2>
+    <p>Gbz Games — Lexik<br>
+      Email: <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a><br>
+      App: com.beginz.lexik</p>
+
+    <footer>
+      <nav>
+        <a href="../">Home</a>
+        <a href="https://play.google.com/store/apps/details?id=com.beginz.lexik">Play Store</a>
+      </nav>
+      <div>Lexik · Gbz Games</div>
+    </footer>
+  </div>
 </body>
 </html>

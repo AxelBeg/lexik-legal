@@ -4,8 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Politique de confidentialité — Lexik</title>
-  <meta name="description" content="Lexik n’a pas de compte et garde votre progression sur l’appareil. Seules des statistiques d’usage anonymes (PostHog, hébergé dans l’UE) et les données des publicités Google AdMob en sortent.">
+  <meta name="description" content="Lexik n’a pas de compte et garde votre progression sur l’appareil. Seules des statistiques d’usage anonymes (PostHog, hébergé dans l’UE), les mots que vous choisissez de signaler et les données des publicités Google AdMob en sortent. Les achats passent par Google Play.">
   <link rel="canonical" href="https://axelbeg.github.io/lexik-legal/confidentialite/">
+  <link rel="alternate" hreflang="fr" href="https://axelbeg.github.io/lexik-legal/confidentialite/">
+  <link rel="alternate" hreflang="en" href="https://axelbeg.github.io/lexik-legal/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://axelbeg.github.io/lexik-legal/privacy/">
+  <script>
+    // ?lang=en : le lien venu de l'app ouvre directement la bonne langue.
+    if ((new URLSearchParams(location.search).get('lang') || '').slice(0, 2).toLowerCase() === 'en') location.replace('../privacy/' + location.hash);
+  </script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
   <style>
     :root {
@@ -43,7 +50,7 @@
     }
     .dots { display: flex; gap: 7px; align-items: center; }
     .dots i { width: 5px; height: 5px; border-radius: 3px; display: block; }
-    nav.crumbs { width: 100%; font-size: 0.8rem; color: var(--text-dim); }
+    nav.crumbs { width: 100%; font-size: 0.8rem; color: var(--text-dim); text-align: center; }
     h1 { font-size: 1.85rem; font-weight: 600; line-height: 1.15; margin: 0 0 0.4rem; }
     .lede { color: var(--text-dim); margin: 0 0 1.5rem; }
     .meta {
@@ -111,12 +118,13 @@
         <i style="background:#d1651c"></i>
         <i style="background:#cf2d18"></i>
       </div>
+      <nav class="crumbs" aria-label="Langue">Français · <a href="../privacy/" hreflang="en" lang="en">English</a></nav>
     </header>
 
     <h1>Politique de confidentialité</h1>
-    <p class="lede">Lexik ne vous demande aucun compte, et votre progression reste sur votre téléphone. Deux choses en sortent&nbsp;: des statistiques d’usage anonymes, envoyées à PostHog (hébergé dans l’Union européenne) pour que nous sachions comment le jeu est utilisé, et les données dont Google AdMob a besoin pour les publicités vidéo.</p>
+    <p class="lede">Lexik ne vous demande aucun compte, et votre progression reste sur votre téléphone. Deux choses en sortent&nbsp;: des statistiques d’usage anonymes, envoyées à PostHog (hébergé dans l’Union européenne) pour que nous sachions comment le jeu est utilisé, et les données dont Google AdMob a besoin pour les publicités vidéo. Un mot que le jeu refuse n’en sort que si vous choisissez de le signaler. Si vous achetez un pack d’indices, le paiement passe par Google Play.</p>
     <div class="meta">
-      <span>Dernière mise à jour&nbsp;: 17 septembre 2026</span>
+      <span>Dernière mise à jour&nbsp;: 4 novembre 2026</span>
       <span>Application Android <span style="letter-spacing:0">com.beginz.lexik</span></span>
     </div>
 
@@ -126,7 +134,7 @@
         <li><a href="#editeur">Éditeur et responsable</a></li>
         <li><a href="#donnees">Données traitées</a></li>
         <li><a href="#usages">Finalités et bases légales</a></li>
-        <li><a href="#statistiques">Statistiques d’usage</a></li>
+        <li><a href="#statistiques">Statistiques d’usage et mots signalés</a></li>
         <li><a href="#publicite">Publicité et identifiant publicitaire</a></li>
         <li><a href="#partenaires">Partenaires</a></li>
         <li><a href="#conservation">Conservation</a></li>
@@ -142,10 +150,10 @@
     <h2 id="editeur"><span class="n">01</span>Éditeur et responsable du traitement</h2>
     <p>Lexik est un jeu de puzzle sémantique (mot du jour et campagne) édité par <strong>Gbz Games</strong>, responsable du traitement pour l’application Android Lexik (identifiant <strong>com.beginz.lexik</strong>).</p>
     <p>Contact&nbsp;: <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a>.</p>
-    <p><strong>Pas de compte, pas de serveur de jeu.</strong> Lexik fonctionne entièrement sur votre téléphone. Vous n’avez ni compte à créer, ni adresse e-mail, ni nom, ni mot de passe à fournir. Votre progression est enregistrée sur l’appareil, et Gbz Games n’en reçoit aucune copie. Ce que nous recevons se limite aux statistiques d’usage anonymes décrites à la section&nbsp;4.</p>
+    <p><strong>Pas de compte, pas de serveur de jeu.</strong> Lexik fonctionne entièrement sur votre téléphone. Vous n’avez ni compte à créer, ni adresse e-mail, ni nom, ni mot de passe à fournir. Votre progression est enregistrée sur l’appareil, et Gbz Games n’en reçoit aucune copie. Ce que nous recevons se limite aux statistiques d’usage anonymes et aux mots que vous signalez, décrits à la section&nbsp;4.</p>
 
     <h2 id="donnees"><span class="n">02</span>Données traitées</h2>
-    <p>Voici l’inventaire complet. Les deux premières lignes ne quittent jamais votre appareil. La troisième est envoyée à PostHog pour Gbz Games. Les deux dernières sont envoyées à Google par le SDK Google AdMob, jamais à Gbz Games.</p>
+    <p>Voici l’inventaire complet. Les deux premières lignes ne quittent jamais votre appareil. La troisième et la quatrième sont envoyées à PostHog pour Gbz Games. Les deux suivantes sont envoyées à Google par le SDK Google AdMob, jamais à Gbz Games. La dernière est traitée par Google Play.</p>
     <table>
       <thead>
         <tr><th>Donnée</th><th>Ce que c’est, et où elle va</th></tr>
@@ -153,7 +161,7 @@
       <tbody>
         <tr>
           <td>Données de jeu</td>
-          <td>Niveaux terminés, propositions de mots, scores, indices utilisés, monnaie d’indices, série de jours joués, résultats du mot du jour, nombre de vidéos récompensées vues dans la journée. <strong>Stockées uniquement sur l’appareil, jamais transmises.</strong></td>
+          <td>Niveaux terminés, propositions de mots, scores, indices utilisés, monnaie d’indices, série de jours joués, résultats du mot du jour, nombre de vidéos récompensées vues dans la journée. <strong>Stockées uniquement sur l’appareil, jamais transmises.</strong> Un mot refusé par le jeu n’est pas enregistré&nbsp;: il ne part que si vous le signalez (voir «&nbsp;Mots signalés&nbsp;»).</td>
         </tr>
         <tr>
           <td>Préférences locales</td>
@@ -161,7 +169,11 @@
         </tr>
         <tr>
           <td>Statistiques d’usage</td>
-          <td>Des événements de jeu anonymes (par exemple une partie commencée ou gagnée, un indice acheté, une vidéo récompensée regardée), accompagnés d’un identifiant d’installation aléatoire, d’un identifiant de session, de la langue, du modèle d’appareil, de la version d’Android et de la version de l’application. <strong>Envoyés à PostHog, pour Gbz Games.</strong> Voir la section&nbsp;4.</td>
+          <td>Des événements de jeu anonymes (par exemple une partie commencée ou gagnée, un indice acheté, une vidéo récompensée regardée, un achat commencé, terminé ou échoué, avec le pack, son prix et la devise), accompagnés d’un identifiant d’installation aléatoire, d’un identifiant de session, de la langue, du modèle d’appareil, de la version d’Android et de la version de l’application. <strong>Envoyés à PostHog, pour Gbz Games.</strong> Voir la section&nbsp;4.</td>
+        </tr>
+        <tr>
+          <td>Mots signalés</td>
+          <td>Un mot refusé par le jeu, uniquement si vous appuyez sur <em>Signaler une erreur</em>, avec la partie en cours et les informations de la ligne précédente. <strong>Envoyés à PostHog, pour Gbz Games.</strong> Voir la section&nbsp;4.</td>
         </tr>
         <tr>
           <td>Identifiant publicitaire</td>
@@ -171,9 +183,13 @@
           <td>Informations d’appareil et d’usage publicitaire</td>
           <td>Envoyées <strong>à Google</strong> par le SDK AdMob&nbsp;: adresse IP (dont Google déduit une localisation approximative), modèle d’appareil, version d’Android, langue, données de diagnostic du SDK et interactions avec les annonces (affichage, visionnage, clic).</td>
         </tr>
+        <tr>
+          <td>Achats intégrés</td>
+          <td>Les packs d’indices que vous achetez et le statut de ces achats, <strong>traités par Google Play</strong>. Le paiement est géré uniquement par Google&nbsp;: Gbz Games n’a jamais accès à vos informations de paiement.</td>
+        </tr>
       </tbody>
     </table>
-    <p><strong>Lexik ne collecte pas</strong>&nbsp;: nom, adresse e-mail, numéro de téléphone, contacts, photos, fichiers, microphone, localisation précise, données de santé ou données financières. L’application n’enregistre pas votre écran (pas d’enregistrement de session) et n’intègre ni Firebase Analytics, ni Crashlytics, ni pixel de réseau social.</p>
+    <p><strong>Lexik ne collecte pas</strong>&nbsp;: nom, adresse e-mail, numéro de téléphone, contacts, photos, fichiers, microphone, localisation précise, données de santé ou informations de paiement. L’application n’enregistre pas votre écran (pas d’enregistrement de session) et n’intègre ni Firebase Analytics, ni Crashlytics, ni pixel de réseau social.</p>
     <p><strong>Notifications.</strong> Le rappel du mot du jour est programmé <em>sur l’appareil</em>. Aucun jeton de notification n’est envoyé nulle part. La permission n’est demandée qu’après une première victoire quotidienne, et peut être retirée dans les réglages Android.</p>
     <p><strong>Partage.</strong> Le message de victoire passe par la feuille de partage du système. Lexik n’a pas accès à vos contacts.</p>
 
@@ -181,18 +197,20 @@
     <ul>
       <li><strong>Faire fonctionner le jeu</strong> (données de jeu, préférences)&nbsp;: ces données sont traitées par l’application, sur votre appareil. Gbz Games n’y a pas accès et ne les reçoit pas.</li>
       <li><strong>Statistiques d’usage</strong> (événements anonymes, identifiant d’installation, informations techniques)&nbsp;: intérêt légitime, art.&nbsp;6.1.f du RGPD. Il s’agit de comprendre comment le jeu est utilisé, de repérer ce qui bloque les joueurs et d’améliorer Lexik.</li>
+      <li><strong>Mots signalés</strong> (le mot, la partie en cours, identifiant d’installation, informations techniques)&nbsp;: intérêt légitime, art.&nbsp;6.1.f du RGPD. Il s’agit de corriger le dictionnaire du jeu, et l’envoi n’a lieu que si vous le demandez.</li>
+      <li><strong>Achats intégrés</strong> (statut des achats)&nbsp;: exécution du contrat, art.&nbsp;6.1.b du RGPD. Il s’agit de vous créditer les indices achetés.</li>
       <li><strong>Publicités récompensées</strong> (identifiant publicitaire, informations d’appareil envoyées à Google)&nbsp;: consentement, art.&nbsp;6.1.a du RGPD. Dans l’Espace économique européen, au Royaume-Uni et en Suisse, il est recueilli par le formulaire de consentement de Google (UMP) avant toute publicité personnalisée.</li>
     </ul>
-    <p>Lexik ne propose pas d’achats intégrés. S’ils sont proposés un jour, ils passeront par Google Play et cette politique sera mise à jour avant.</p>
 
-    <h2 id="statistiques"><span class="n">04</span>Statistiques d’usage</h2>
+    <h2 id="statistiques"><span class="n">04</span>Statistiques d’usage et mots signalés</h2>
     <p>Lexik envoie des statistiques d’usage à <strong>PostHog</strong> (PostHog Inc.), qui agit comme sous-traitant de Gbz Games. Les données sont <strong>hébergées dans l’Union européenne</strong> (PostHog Cloud EU).</p>
     <ul>
-      <li><strong>Ce qui est envoyé</strong>&nbsp;: les événements de jeu décrits à la section&nbsp;2, et rien d’autre. Aucun enregistrement d’écran, aucune capture automatique de vos gestes.</li>
+      <li><strong>Ce qui est envoyé</strong>&nbsp;: les événements de jeu et les mots signalés décrits à la section&nbsp;2, et rien d’autre. Aucun enregistrement d’écran, aucune capture automatique de vos gestes.</li>
       <li><strong>Anonymes</strong>&nbsp;: l’identifiant d’installation est tiré au hasard par l’application. Il n’est rattaché ni à un nom, ni à une adresse e-mail, ni à votre compte Google, ni à l’identifiant publicitaire. Une réinstallation en crée un nouveau.</li>
       <li><strong>Adresse IP</strong>&nbsp;: nécessaire à l’envoi, elle n’est ni conservée par PostHog pour Lexik, ni utilisée pour vous localiser.</li>
       <li><strong>Usage</strong>&nbsp;: des mesures d’ensemble (combien de joueurs finissent un niveau, où ils abandonnent, combien d’indices ils utilisent). Ces statistiques ne servent ni à la publicité, ni à vous profiler, et ne sont ni vendues ni partagées.</li>
     </ul>
+    <p id="signalement"><strong>Signaler un mot refusé.</strong> Quand Lexik ne connaît pas un mot que vous proposez, un lien <em>Signaler une erreur</em> apparaît sous le message de refus. Vos propositions ne sont jamais envoyées d’elles-mêmes&nbsp;: tant que vous n’appuyez pas sur ce lien, rien ne part. Un seul appui suffit, sans confirmation&nbsp;: Lexik affiche <em>Merci, c’est noté</em> et envoie à PostHog le mot tel qu’il s’affiche à l’écran (en minuscules, sans chiffres ni ponctuation, 40 caractères au plus), avec le mode de jeu, le numéro du mot du jour ou du niveau, sa difficulté, l’identifiant d’installation et les informations techniques de la section&nbsp;2. Nous nous en servons uniquement pour repérer les mots que le jeu refuse à tort. Comme il s’agit d’un texte que vous avez saisi, ne signalez pas un nom de personne, une adresse ou toute autre information personnelle. Les mots signalés suivent les mêmes règles que les statistiques d’usage&nbsp;: 12 mois de conservation au plus, ni vente, ni partage, ni usage publicitaire.</p>
     <p>Politique de PostHog&nbsp;: <a href="https://posthog.com/privacy">posthog.com/privacy</a>.</p>
 
     <h2 id="publicite"><span class="n">05</span>Publicité et identifiant publicitaire</h2>
@@ -217,7 +235,7 @@
     <ul>
       <li><strong>PostHog</strong>&nbsp;: les statistiques d’usage, pour le compte de Gbz Games, hébergées dans l’Union européenne (section&nbsp;4).</li>
       <li><strong>Google AdMob</strong>&nbsp;: les publicités récompensées (section&nbsp;5).</li>
-      <li><strong>Google Play</strong>&nbsp;: la distribution et les mises à jour de l’application, selon les règles de Google Play.</li>
+      <li><strong>Google Play</strong>&nbsp;: la distribution et les mises à jour de l’application, et le paiement des achats intégrés, selon les règles de Google Play.</li>
     </ul>
     <p>Les statistiques d’usage restent dans l’Union européenne. Google est établi notamment aux États-Unis&nbsp;: lorsque des données publicitaires sont transférées hors de l’Union européenne, elles le sont selon les mécanismes prévus par Google (clauses contractuelles types et, le cas échéant, cadre d’adéquation en vigueur).</p>
 
@@ -225,15 +243,15 @@
     <ul>
       <li><strong>Données de jeu et préférences</strong>&nbsp;: conservées sur le téléphone jusqu’à ce que vous désinstalliez Lexik ou effaciez ses données (voir section&nbsp;9).</li>
       <li><strong>Sauvegarde Android</strong>&nbsp;: si la sauvegarde est activée sur votre téléphone, Android peut copier les données de Lexik dans la sauvegarde de votre compte Google. C’est ce qui permet de retrouver votre progression sur un nouveau téléphone. Cette copie est gérée par Google, dans votre compte, et Gbz Games n’y a pas accès. Vous pouvez la désactiver ou la supprimer depuis les réglages de sauvegarde de votre téléphone ou de votre compte Google.</li>
-      <li><strong>Statistiques d’usage</strong>&nbsp;: conservées par PostHog 12 mois au plus, puis supprimées.</li>
-      <li><strong>Données publicitaires</strong>&nbsp;: conservées par Google selon sa politique. Gbz Games ne les stocke pas.</li>
+      <li><strong>Statistiques d’usage et mots signalés</strong>&nbsp;: conservés par PostHog 12 mois au plus, puis supprimés.</li>
+      <li><strong>Données publicitaires et historique des achats</strong>&nbsp;: conservés par Google selon sa politique. Gbz Games ne les stocke pas.</li>
     </ul>
 
     <h2 id="droits"><span class="n">08</span>Vos droits</h2>
     <p>Le RGPD vous donne un droit d’accès, de rectification, d’effacement, de limitation, de portabilité et d’opposition, ainsi que le droit de retirer votre consentement.</p>
     <ul>
       <li><strong>Votre progression</strong>&nbsp;: Gbz Games ne la détient pas. Elle est entre vos mains&nbsp;: pour l’effacer, désinstallez Lexik ou effacez ses données (section&nbsp;9).</li>
-      <li><strong>Les statistiques d’usage</strong>&nbsp;: vous pouvez vous opposer à leur traitement, ou en demander l’accès ou l’effacement, en écrivant à <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a>. Comme elles ne sont rattachées qu’à un identifiant d’installation aléatoire, nous ne pouvons les retrouver que si vous nous donnez des éléments permettant de l’identifier. Sans eux, nous ne pouvons pas relier ces événements à vous.</li>
+      <li><strong>Les statistiques d’usage et les mots signalés</strong>&nbsp;: vous pouvez vous opposer à leur traitement, ou en demander l’accès ou l’effacement, en écrivant à <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a>. Comme elles ne sont rattachées qu’à un identifiant d’installation aléatoire, nous ne pouvons les retrouver que si vous nous donnez des éléments permettant de l’identifier. Sans eux, nous ne pouvons pas relier ces événements à vous.</li>
       <li><strong>La publicité</strong>&nbsp;: retirez votre consentement dans Réglages → Préférences publicitaires, réinitialisez l’identifiant publicitaire, et gérez les données détenues par Google depuis les réglages de votre compte Google.</li>
     </ul>
     <p>Vous pouvez aussi introduire une réclamation auprès de la <a href="https://www.cnil.fr/">CNIL</a>.</p>
@@ -244,16 +262,16 @@
       <p><strong>Tout effacer</strong>&nbsp;: désinstallez Lexik. Ou, pour garder l’application et repartir de zéro&nbsp;: Paramètres Android → Applications → Lexik → Stockage → <em>Effacer les données</em>. L’effacement est immédiat et irréversible, et un nouvel identifiant d’installation sera tiré au prochain lancement.</p>
       <p><strong>Copie de sauvegarde</strong>&nbsp;: si la sauvegarde Android est activée, supprimez aussi la copie de Lexik depuis les réglages de sauvegarde de votre compte Google.</p>
     </div>
-    <p>Effacer les données de Lexik sur le téléphone ne supprime pas les statistiques d’usage déjà envoyées&nbsp;: elles ne sont plus reliées à la nouvelle installation, et disparaissent au bout de 12 mois au plus. Pour les faire effacer plus tôt, voyez la section&nbsp;8. Les données que Google détient pour la publicité se gèrent depuis votre compte Google (section&nbsp;5).</p>
+    <p>Effacer les données de Lexik sur le téléphone ne supprime pas les statistiques d’usage ni les mots signalés déjà envoyés&nbsp;: elles ne sont plus reliées à la nouvelle installation, et disparaissent au bout de 12 mois au plus. Pour les faire effacer plus tôt, voyez la section&nbsp;8. Les données que Google détient pour la publicité se gèrent depuis votre compte Google (section&nbsp;5).</p>
 
     <h2 id="enfants"><span class="n">10</span>Enfants</h2>
     <p>Lexik n’est pas destinée aux enfants de moins de 16 ans et n’est pas un service «&nbsp;conçu pour les familles&nbsp;». Nous ne collectons pas sciemment de données concernant des mineurs de moins de 16 ans. Si vous pensez qu’un mineur utilise Lexik, écrivez à <a href="mailto:gbzgames37@gmail.com">gbzgames37@gmail.com</a>.</p>
 
     <h2 id="securite"><span class="n">11</span>Sécurité</h2>
-    <p>Les données de jeu restent dans l’espace privé de l’application, auquel les autres applications n’ont pas accès. Le trafic réseau de Lexik se limite aux envois vers PostHog et à celui du SDK Google AdMob, tous deux chiffrés en transit (HTTPS).</p>
+    <p>Les données de jeu restent dans l’espace privé de l’application, auquel les autres applications n’ont pas accès. Le trafic réseau de Lexik se limite aux envois vers PostHog, à celui du SDK Google AdMob et aux échanges avec Google Play pour les achats, tous chiffrés en transit (HTTPS).</p>
 
     <h2 id="modifs"><span class="n">12</span>Modifications</h2>
-    <p>Si Lexik change sa façon de traiter les données — par exemple une sauvegarde de la progression en ligne via Google Play Jeux, des achats intégrés, de nouvelles statistiques d’usage ou un nouveau partenaire —, cette politique sera mise à jour avant la mise en service, et la date en tête de page changera. La version publiée à <a href="https://axelbeg.github.io/lexik-legal/confidentialite/">axelbeg.github.io/lexik-legal/confidentialite/</a> fait foi.</p>
+    <p>Si Lexik change sa façon de traiter les données — par exemple une sauvegarde de la progression en ligne via Google Play Jeux, de nouvelles statistiques d’usage ou un nouveau partenaire —, cette politique sera mise à jour avant la mise en service, et la date en tête de page changera. La version publiée à <a href="https://axelbeg.github.io/lexik-legal/confidentialite/">axelbeg.github.io/lexik-legal/confidentialite/</a> fait foi.</p>
 
     <h2 id="contact"><span class="n">13</span>Contact</h2>
     <p>Gbz Games — Lexik<br>
